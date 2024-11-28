@@ -1,0 +1,241 @@
+@font-face {
+    font-family: DMSans-Medium;
+    src: url(./assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+/* general */
+
+*{
+    font-family: DMSans-Medium;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+
+body{
+    padding: 30px;
+    background-color: #c4c4c4;
+}
+
+.text__purple{
+    font-style: italic;
+    color: #9001bf;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 80vw;
+}
+
+
+
+/* grid block */
+
+
+
+.grid__block{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    > .grid__block__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 30px;
+        min-width: 260px;
+    }
+
+    > .one{
+        line-height: 40px;
+        letter-spacing: -2px;
+        background-color: #fdeee2;
+
+        >h3{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        > img{
+            height: 100px;
+        }
+    }
+
+    > .two{
+        grid-column: 2 / 4;
+
+
+        text-align: center;
+        color: white;
+        background-color: #5818bf;
+        line-height: 60px;
+        
+
+        > h2{
+            font-weight: 600;
+            font-size: 70px;
+            line-height: 85px;
+            margin-bottom: 30px;
+
+            > .orange{
+                color: #ffc769;
+            }
+
+            > .italic{
+                font-weight: 600;
+                font-style: italic;
+            }
+            
+        }
+
+        >img{
+            height: 40px;
+        }
+
+        > p{
+            font-size: 23px;
+        }
+    }
+
+    > .three{
+        background-color: #e3c9fd;
+        position: relative;
+        overflow: hidden;
+        grid-column: 4/5;
+        grid-row: 1/3;
+
+        >h3{
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 40px;
+        }
+
+        >img{
+            margin-left: 80%;
+            height: 400px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        >p{
+            line-height: 30px;
+            margin: 0 auto;
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+
+    > .four{
+
+        grid-row: 2/4;
+        background-color: #ffcf65;
+        padding: 20px;
+        display: flex;
+        gap: 30px;
+
+
+        >h3{
+            align-self: flex-start;
+            font-size: 48px;
+            margin-bottom: 50px;
+            line-height: 40px;
+        }
+
+        >img{
+            width: 320px;
+        }
+    }
+
+    > .five{
+
+        background-color: #ffffff;
+        display: flex;
+        overflow: hidden;
+
+
+        > h4{
+            align-self: flex-start;
+            font-size: 45px;
+            line-height: 38px;
+        }
+
+        > img{
+            width: 600px;
+            margin-left: 72%;
+            margin-bottom: 8%;
+        }
+
+    }
+
+    > .six{
+
+        background-color: #ffcf65;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        padding: 25px;
+        overflow: hidden;
+
+        > h4{
+            font-size: 45px;
+            line-height: 40px;
+            align-self: baseline;
+        }
+
+        >img{
+            position: absolute;
+            bottom: -30%;
+            width: 300px;
+        }
+    }
+
+    > .seven{
+
+        background-color: #ffffff;
+        grid-column: 2/3;
+        padding: 20px;
+
+        >h2{
+            font-size: 80px;
+        }
+
+        > h4{
+            font-size: 25px;
+            margin-bottom: 60px;
+        }
+
+        >img{
+            width: 250px;
+        }
+    }
+
+    > .eight{
+
+        background-color: #5818bf;
+        grid-column: 3/5;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 20px;
+
+        >h4{
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 50px;
+            color: #fff;
+            padding-bottom: 50px;
+        }
+
+        >img{
+            width: 300px;
+        }
+    }
+
+    
+}
